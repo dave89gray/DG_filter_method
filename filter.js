@@ -20,6 +20,17 @@ const people = [
     age: 18,
   },
 ];
+//accessing the people array, filtering and then call back function to filter for people 21 or over
+const legalAge = people.filter(person => person.age >= 21);
+console.log(legalAge);
+
+const paul = people.filter(person => person.name === "Paul");
+// Could also be:
+// const paul = people.filter(p => p.name === "Paul");
+
+// To get the object itself, we can append [0] to get the first and only element in the resulting array
+// const paul = people.filter(p => p.name === "Paul")[0];
+console.log(paul);
 
 
 // Complex Filtering
